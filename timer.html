@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Study Timer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+    <h1>⏱️ Study Timer</h1>
+    <div class="tooltip">
+        <button id="themeToggle" class="btn">🌑</button>
+        <span class="tooltip-text" id="themeTooltip">Switch to Dark Mode</span>
+    </div>
+
+</header>
+
+<nav class="navbar">
+    <a href="index.html">Smart Study Dashboard</a>
+    <a href="planner.html">Daily Planner</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="timer.html" class="active">Study Timer</a>
+    <a href="performance.html">Performance Tracker</a>
+    <a href="tasks.html">Task Manager</a>
+    <a href="profile.html">Profile</a>
+</nav>
+
+<main class="dashboard">
+
+    <!-- Pomodoro Timer (25 min) -->
+    <section class="card timer-card">
+        <h3>🍅 Pomodoro Timer</h3>
+        <p>25 minutes study + 5 minutes break</p>
+        <h2 id="pomodoroSessionType">Study Time 📖</h2>
+        <h1 id="pomodoroTimer">25:00</h1>
+        <div class="buttons">
+            <button class="btn" onclick="startPomodoroTimer()">Start</button>
+            <button class="btn" onclick="pausePomodoroTimer()">Pause</button>
+            <button class="btn" onclick="resetPomodoroTimer()">Reset</button>
+        </div>
+    </section>
+
+    <!-- Extended Timer (60 min) -->
+    <section class="card timer-card">
+        <h3>⏰ Extended Timer</h3>
+        <p>60 minutes study + 10 minutes break</p>
+        <h2 id="extendedSessionType">Extended Study 📖</h2>
+        <h1 id="extendedTimer">60:00</h1>
+        <div class="buttons">
+            <button class="btn" onclick="startExtendedTimer()">Start</button>
+            <button class="btn" onclick="pauseExtendedTimer()">Pause</button>
+            <button class="btn" onclick="resetExtendedTimer()">Reset</button>
+        </div>
+    </section>
+
+    <!-- Custom Timer -->
+    <section class="card timer-card">
+        <h3>🎯 Custom Timer</h3>
+        <p>Set your own study duration</p>
+        
+        <div class="custom-timer-setup">
+            <div class="time-inputs">
+                <label>Hours: <input type="number" id="customHours" min="0" max="23" value="0"></label>
+                <label>Minutes: <input type="number" id="customMinutes" min="0" max="59" value="25"></label>
+            </div>
+            <button class="btn" onclick="setCustomTimer()">Set Timer</button>
+        </div>
+
+        <h2 id="customSessionType">Custom Timer ⏰</h2>
+        <h1 id="customTimer">25:00</h1>
+        <div class="buttons">
+            <button class="btn" onclick="startCustomTimer()">Start</button>
+            <button class="btn" onclick="pauseCustomTimer()">Pause</button>
+            <button class="btn" onclick="resetCustomTimer()">Reset</button>
+        </div>
+    </section>
+
+</main>
+
+<div class="quote-strip" id="quoteStrip"></div>
+
+<script src="js/timer.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

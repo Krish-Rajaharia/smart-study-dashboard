@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+    <h1>📝 Task Manager</h1>
+    <div class="tooltip">
+        <button id="themeToggle" class="btn">🌑</button>
+        <span class="tooltip-text" id="themeTooltip">Switch to Dark Mode</span>
+    </div>
+
+</header>
+
+<nav class="navbar">
+    <a href="index.html">Smart Study Dashboard</a>
+    <a href="planner.html">Daily Planner</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="timer.html">Study Timer</a>
+    <a href="performance.html">Performance Tracker</a>
+    <a href="tasks.html" class="active">Task Manager</a>
+    <a href="profile.html">Profile</a>
+</nav>
+
+<main class="dashboard">
+
+<section class="card">
+    <input type="text" id="taskInput" placeholder="Enter task">
+    <select id="priority">
+        <option value="Low">Low</option>
+        <option value="Medium">Medium</option>
+        <option value="High">High</option>
+    </select>
+    <button class="btn" onclick="addTask()">Add Task</button>
+</section>
+
+<section class="card">
+    <h2>Your Tasks</h2>
+    <div class="buttons">
+        <button onclick="setFilter('all')">All</button>
+        <button onclick="setFilter('completed')">Completed</button>
+        <button onclick="setFilter('pending')">Pending</button>
+    </div>
+
+    <ul id="taskList"></ul>
+</section>
+
+</main>
+
+<div class="quote-strip" id="quoteStrip"></div>
+
+<script src="js/tasks.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

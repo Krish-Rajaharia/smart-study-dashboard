@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daily Planner</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+    <h1>📅 Daily Planner</h1>
+    <div class="tooltip">
+        <button id="themeToggle" class="btn">🌑</button>
+        <span class="tooltip-text" id="themeTooltip">Switch to Dark Mode</span>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="index.html">Smart Study Dashboard</a>
+    <a href="planner.html" class="active">Daily Planner</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="timer.html">Study Timer</a>
+    <a href="performance.html">Performance Tracker</a>
+    <a href="tasks.html">Task Manager</a>
+    <a href="profile.html">Profile</a>
+</nav>
+
+<main class="dashboard">
+
+<section class="card">
+    <input type="time" id="time">
+    <input type="text" id="activity" placeholder="Activity">
+    <button class="btn" onclick="addPlan()">Add</button>
+    <button class="btn clear-btn" onclick="clearAllPlans()">Clear All</button>
+</section>
+
+<section class="card">
+    <ul id="planList"></ul>
+</section>
+
+<section class="card">
+    <h3>✅ Completed Activities</h3>
+    <ul id="completedList"></ul>
+</section>
+
+</main>
+
+<div class="quote-strip" id="quoteStrip"></div>
+
+<script src="js/planner.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

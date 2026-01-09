@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Performance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+    <h1>📊 Performance Tracker</h1>
+    <div class="tooltip">
+        <button id="themeToggle" class="btn">🌑</button>
+        <span class="tooltip-text" id="themeTooltip">Switch to Dark Mode</span>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="index.html">Smart Study Dashboard</a>
+    <a href="planner.html">Daily Planner</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="timer.html">Study Timer</a>
+    <a href="performance.html" class="active">Performance Tracker</a>
+    <a href="tasks.html">Task Manager</a>
+    <a href="profile.html">Profile</a>
+</nav>
+
+<main class="dashboard">
+
+<section class="card">
+    <input id="subjectInput" placeholder="Subject">
+    <input id="scoredInput" type="number" placeholder="Scored">
+    <input id="maxInput" type="number" placeholder="Max Marks">
+    <input type="date" id="dateInput" placeholder="Date">
+    <button class="btn" onclick="addPerformance()">Add</button>
+    <button class="btn clear-btn" onclick="clearAllData()">Clear All Data</button>
+</section>
+
+<section class="card">
+    <select id="subjectSelect"></select>
+    <canvas id="chart" width="600" height="400"></canvas>
+</section>
+
+<section class="card">
+    <h3>📈 Performance Trend</h3>
+    <div id="trendAnalysis"></div>
+</section>
+
+</main>
+
+<div class="quote-strip" id="quoteStrip"></div>
+
+<script src="js/performance.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weekly Timetable</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <button class="back-btn" onclick="goBack()">⬅ Back</button>
+    <h1>📅 Weekly Timetable</h1>
+    <div class="tooltip">
+        <button id="themeToggle" class="btn">🌑</button>
+        <span class="tooltip-text" id="themeTooltip">Switch to Dark Mode</span>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="index.html">Smart Study Dashboard</a>
+    <a href="planner.html">Daily Planner</a>
+    <a href="timetable.html" class="active">Timetable</a>
+    <a href="timer.html">Study Timer</a>
+    <a href="performance.html">Performance Tracker</a>
+    <a href="tasks.html">Task Manager</a>
+    <a href="profile.html">Profile</a>
+</nav>
+
+<main class="timetable-page">
+<section class="timetable-wrapper">
+
+<div class="timetable-actions">
+    <button class="btn clear-btn" onclick="clearTimetable()">
+        🗑 Clear Timetable
+    </button>
+</div>
+    
+<table class="timetable">
+<thead>
+<tr id="timeRow"></tr>
+</thead>
+
+<tbody id="timetableBody"></tbody>
+</table>
+
+<p class="hint">✏️ Click any cell to edit. Changes save automatically.</p>
+
+</section>
+</main>
+
+<div class="quote-strip" id="quoteStrip"></div>
+
+<script src="js/timetable.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

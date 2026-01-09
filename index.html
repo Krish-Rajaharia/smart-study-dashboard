@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Study Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-left">
+        <img src="assets/logo.svg" class="logo" alt="Logo">
+    </div>
+
+    <div class="header-center">
+        <div>
+            <h1>Smart Study Dashboard</h1>
+            <p>Your friendly study companion</p>
+        </div>
+    </div>
+
+    <div class="header-right">
+        <div class="tooltip">
+            <button id="themeToggle" class="btn">🌑</button>
+            <span class="tooltip-text" id="themeTooltip">Switch to Dark Mode</span>
+        </div>
+    </div>
+</header>
+
+<nav class="navbar">
+    <a href="index.html" class="active">Smart Study Dashboard</a>
+    <a href="planner.html">Daily Planner</a>
+    <a href="timetable.html">Timetable</a>
+    <a href="timer.html">Study Timer</a>
+    <a href="performance.html">Performance Tracker</a>
+    <a href="tasks.html">Task Manager</a>
+    <a href="profile.html">Profile</a>
+</nav>
+
+<main class="dashboard">
+
+    <section class="card mascot-card">
+        <img src="assets/images/mascot-happy.png" id="mascot">
+        <h2>Hello, Student! 😄</h2>
+        <p id="motivation"></p>
+    </section>
+
+    <section class="card goal-ring">
+        <h2>🎯 Daily Goal</h2>
+        <div class="ring">
+            <svg width="120" height="120">
+                <circle cx="60" cy="60" r="50"></circle>
+                <circle cx="60" cy="60" r="50" id="goalCircle"></circle>
+            </svg>
+            <div class="ring-text" id="goalPercent">0%</div>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Today's Study Progress</h2>
+
+        <div class="progress-box">
+            <label>Study Time</label>
+            <div class="progress-bar">
+                <div class="progress-fill" id="studyProgress"></div>
+            </div>
+            <span id="studyPercent">0%</span>
+        </div>
+
+        <div class="progress-box">
+            <label>Tasks Completed</label>
+            <div class="progress-bar">
+                <div class="progress-fill tasks" id="taskProgress"></div>
+            </div>
+            <span id="taskPercent">0%</span>
+        </div>
+    </section>
+
+    <section class="card">
+        <h2>Quick Actions 🚀</h2>
+        <div class="buttons">
+            <a href="timer.html" class="btn">Start Timer</a>
+            <a href="tasks.html" class="btn">Add Tasks</a>
+            <a href="planner.html" class="btn">Plan Day</a>
+        </div>
+    </section>
+
+    <section class="card weekly-summary">
+        <h2>📊 This Week</h2>
+        <p>⏱️ Study Time: <span id="weekStudy">0</span> min</p>
+        <p>✅ Tasks Done: <span id="weekTasks">0</span></p>
+        <p>📅 Active Days: <span id="weekDays">0</span></p>
+    </section>
+
+    <section class="card heatmap">
+        <h2>📅 Weekly Consistency</h2>
+        <div class="heatmap-grid" id="heatmap"></div>
+    </section>
+
+</main>
+
+<div class="quote-strip" id="quoteStrip"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
