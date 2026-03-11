@@ -938,3 +938,396 @@ body.dark .lunch {
     background: #ff9800 !important;
     color: #000;
 }
+
+/* =========================
+   PROFESSIONAL THEME (AGE > 15)
+========================= */
+
+/* Font - Professional */
+body.professional * {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Background - Clean and minimalist */
+body.professional {
+    background-color: #f5f5f5;
+    background-image: none;
+    color: #2c3e50;
+}
+
+/* Header - Professional styling */
+body.professional .header {
+    background: #2c3e50;
+    border-bottom: 2px solid #34495e;
+    padding: 12px 20px;
+}
+
+body.professional .header h1 {
+    color: #fff;
+    text-shadow: none;
+    -webkit-text-stroke: none;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+body.professional .header-center h1 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+body.professional .header-center p {
+    color: #ecf0f1;
+    font-size: 14px;
+}
+
+/* Navbar - Professional */
+body.professional .navbar {
+    background: #34495e;
+    border-bottom: 2px solid #2c3e50;
+}
+
+body.professional .navbar a {
+    background: #ecf0f1;
+    color: #2c3e50;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-weight: 500;
+    box-shadow: none;
+    text-shadow: none;
+    -webkit-text-stroke: none;
+    padding: 8px 16px;
+}
+
+body.professional .navbar a:hover {
+    background: #3498db;
+    color: #fff;
+    border-color: #3498db;
+    transform: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+body.professional .navbar a.active {
+    background: #3498db;
+    color: #fff;
+    border-color: #3498db;
+}
+
+/* Cards - Professional */
+body.professional .card {
+    background: #fff;
+    border: 1px solid #e0e6ed;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+body.professional .card h2,
+body.professional .card h3 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+body.professional .card p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Buttons - Professional */
+body.professional button,
+body.professional .btn,
+body.professional a.btn {
+    background: #3498db;
+    color: #fff;
+    border: 1px solid #2980b9;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-weight: 500;
+    box-shadow: none;
+    transition: all 0.2s ease;
+}
+
+body.professional button:hover,
+body.professional .btn:hover,
+body.professional a.btn:hover {
+    background: #2980b9;
+    transform: none;
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.3);
+}
+
+body.professional button:active,
+body.professional .btn:active,
+body.professional a.btn:active {
+    box-shadow: none;
+    transform: none;
+}
+
+/* Forms - Professional */
+body.professional input,
+body.professional select {
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    padding: 10px 12px;
+    background: #fff;
+    color: #2c3e50;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    font-size: 14px;
+}
+
+body.professional input:focus,
+body.professional select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+/* Progress bars - Professional */
+body.professional .progress-bar {
+    background: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+body.professional .progress-fill {
+    background: #3498db;
+    transition: width 0.3s ease;
+}
+
+body.professional .progress-fill.tasks {
+    background: #2ecc71;
+}
+
+/* Quote strip - Professional */
+body.professional .quote-strip {
+    background: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+/* Mascot card - Less childish */
+body.professional .mascot-card {
+    opacity: 0.8;
+}
+
+body.professional .mascot-card img {
+    width: 80px;
+    opacity: 0.7;
+}
+
+body.professional .mascot-card h2 {
+    font-size: 20px;
+    color: #2c3e50;
+}
+
+/* Back button - Professional */
+body.professional .back-btn {
+    background: #ecf0f1;
+    color: #2c3e50;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    box-shadow: none;
+    font-weight: 500;
+}
+
+body.professional .back-btn:hover {
+    background: #bdc3c7;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Clear button - Professional */
+body.professional .clear-btn {
+    background: #e74c3c;
+    border: 1px solid #c0392b;
+    color: #fff;
+}
+
+body.professional .clear-btn:hover {
+    background: #c0392b;
+}
+
+/* Task list items - Professional */
+body.professional #taskList li {
+    background: #f8f9fa;
+    border: 1px solid #e0e6ed;
+    border-radius: 6px;
+    color: #2c3e50;
+}
+
+body.professional .tick-btn {
+    background: #ecf0f1;
+    border-color: #bdc3c7;
+    color: transparent;
+    border-radius: 4px;
+}
+
+body.professional .tick-btn:hover {
+    background: #bdc3c7;
+}
+
+body.professional .tick-btn.ticked {
+    background: #2ecc71;
+    border-color: #27ae60;
+}
+
+/* Plan list items - Professional */
+body.professional #planList li {
+    background: #f8f9fa;
+    border: 1px solid #e0e6ed;
+    border-radius: 6px;
+    color: #2c3e50;
+}
+
+/* Remove button - Professional */
+body.professional .remove-btn {
+    background: #e74c3c;
+    border-color: #c0392b;
+    color: #fff;
+}
+
+body.professional .remove-btn:hover {
+    background: #c0392b;
+}
+
+/* Completed list - Professional */
+body.professional #completedList li {
+    background: #f0fdf4;
+    border: 1px solid #86efac;
+    border-radius: 6px;
+}
+
+body.professional .complete-btn {
+    background: #2ecc71;
+    border-color: #27ae60;
+    color: #fff;
+}
+
+body.professional .complete-btn:hover {
+    background: #27ae60;
+}
+
+body.professional .uncomplete-btn {
+    background: #f39c12;
+    border-color: #d68910;
+    color: #fff;
+}
+
+body.professional .uncomplete-btn:hover {
+    background: #d68910;
+}
+
+/* Timetable - Professional */
+body.professional .timetable-wrapper {
+    background: #fff;
+    border: 1px solid #e0e6ed;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+body.professional .timetable th {
+    background: #34495e;
+    color: #fff;
+    border: 1px solid #2c3e50;
+}
+
+body.professional .timetable td {
+    background: #f8f9fa;
+    color: #2c3e50;
+    border: 1px solid #e0e6ed;
+}
+
+body.professional .timetable td:focus {
+    outline: none;
+    background: #e8f4f8;
+    border-color: #3498db;
+}
+
+body.professional .empty-cell::before {
+    color: #bdc3c7;
+}
+
+body.professional .lunch {
+    background: #fff3cd !important;
+    color: #2c3e50;
+}
+
+/* Heatmap - Professional */
+body.professional .heat-day {
+    background: #ecf0f1;
+    border-radius: 4px;
+}
+
+body.professional .heat-0 { background: #ecf0f1; }
+body.professional .heat-1 { background: #b3e5fc; }
+body.professional .heat-2 { background: #4fc3f7; }
+body.professional .heat-3 { background: #0288d1; }
+
+/* Professional + Dark Mode */
+body.professional.dark {
+    background: #1a1a1a;
+    color: #ecf0f1;
+}
+
+body.professional.dark .card {
+    background: #2a2a2a;
+    border-color: #3a3a3a;
+}
+
+body.professional.dark .card h2,
+body.professional.dark .card h3 {
+    color: #ecf0f1;
+}
+
+body.professional.dark .card p {
+    color: #ccc;
+}
+
+body.professional.dark .header {
+    background: #1e1e1e;
+}
+
+body.professional.dark .navbar {
+    background: #242424;
+}
+
+body.professional.dark .navbar a {
+    background: #3a3a3a;
+    color: #ecf0f1;
+    border-color: #4a4a4a;
+}
+
+body.professional.dark .navbar a:hover {
+    background: #3498db;
+    border-color: #3498db;
+}
+
+body.professional.dark input,
+body.professional.dark select {
+    background: #3a3a3a;
+    color: #ecf0f1;
+    border-color: #4a4a4a;
+}
+
+body.professional.dark .progress-bar {
+    background: #3a3a3a;
+    border-color: #4a4a4a;
+}
+
+body.professional.dark .quote-strip {
+    background: #3a3a3a;
+    border-color: #4a4a4a;
+}
+
+body.professional.dark #taskList li {
+    background: #3a3a3a;
+    border-color: #4a4a4a;
+    color: #ecf0f1;
+}
+
+body.professional.dark #planList li {
+    background: #3a3a3a;
+    border-color: #4a4a4a;
+    color: #ecf0f1;
+}

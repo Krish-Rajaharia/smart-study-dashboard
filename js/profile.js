@@ -1,7 +1,9 @@
 const usernameInput = document.getElementById("username");
+const ageInput = document.getElementById("age");
 const goalInput = document.getElementById("goal");
 
 usernameInput.value = localStorage.getItem("username") || "";
+ageInput.value = localStorage.getItem("userAge") || "";
 goalInput.value = localStorage.getItem("dailyGoal") || 120;
 
 document.getElementById("streak").innerText =
@@ -12,8 +14,11 @@ document.getElementById("today").innerText =
 
 function saveProfile() {
     localStorage.setItem("username", usernameInput.value);
+    localStorage.setItem("userAge", ageInput.value);
     localStorage.setItem("dailyGoal", goalInput.value);
     alert("Profile Saved ✅");
+    // Apply theme after saving
+    initializeTheme();
 }
 function logout() {
     localStorage.removeItem("loggedIn");

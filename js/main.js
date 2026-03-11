@@ -1,4 +1,24 @@
 /* =========================
+   AGE-BASED THEME LOGIC
+========================= */
+function initializeTheme() {
+    const userAge = Number(localStorage.getItem("userAge")) || 0;
+    
+    if (userAge > 15) {
+        // Apply professional theme
+        document.body.classList.add("professional");
+    } else {
+        // Keep childish theme
+        document.body.classList.remove("professional");
+    }
+}
+
+// Initialize theme on page load
+document.addEventListener("DOMContentLoaded", initializeTheme);
+// Also initialize immediately for faster theme application
+initializeTheme();
+
+/* =========================
    GLOBAL NAVIGATION
 ========================= */
 function goBack() {
